@@ -9,6 +9,6 @@ gunicorn==23.0.0
 packaging==24.2
 pymongo==4.11.3
 pytz==2025.2
-setuptools==75.8.0
+setuptools==78.1.0
 sqlparse==0.2.4
 wheel==0.45.1
