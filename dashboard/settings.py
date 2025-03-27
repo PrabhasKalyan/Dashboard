@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "https://your-frontend.com",
+]
 
 # Application definition
 
@@ -45,6 +49,8 @@ INSTALLED_APPS = [
 
 ]
 
+CORS_ALLOW_ALL_ORIGINS = True  # Previously CORS_ORIGIN_ALLOW_ALL
+
 # In settings.py
 SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
 CACHES = {
@@ -54,6 +60,7 @@ CACHES = {
 }
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
