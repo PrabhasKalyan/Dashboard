@@ -3,4 +3,4 @@ django
 pymongo
 djongo
 djangorestframework
-corsheaders
+django-cors-headers
