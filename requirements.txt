@@ -1,6 +1,7 @@
 gunicorn
 django
 pymongo
+pytz
 djongo
 djangorestframework
 django-cors-headers
