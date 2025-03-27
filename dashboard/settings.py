@@ -40,7 +40,7 @@ INSTALLED_APPS = [
 
     'rest_framework',
     # 'rest_framework_simplejwt',
-    'django-cors-headers',
+    'corsheaders',
     'dashboard1',
 
 ]
